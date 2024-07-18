@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W10 Whackamole</title>
+    <link rel="stylesheet" href="whackamole.css">
+</head>
+<body>
+    <header>
+        <h1>Whackamole Game</h1>
+    </header>
+    <main>
+       <p>
+        Score: <span id="spanScore"></span>
+       </p>
+       
+        <!--game board-->
+        <div id="gameBoardDiv">
+            <!--create 6 holes-->
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+
+        <!--button to start the game-->
+        <button onclick="startGame();">Start Game!</button>
+
+        <p>
+            <img id="img1" class="fun" src="beach.jpg" alt="fun with JavaScript events" onmouseover="swapImage();" onmouseout="annoyUser();">
+        </p>
+    </main>
+
+    <script src="whackamole.js"></script>
+</body>
+</html>
